@@ -3,7 +3,7 @@
 Path: `beat-2-contribution/contribution-story.md`
 
 **Contribution Number:** 1
-**Student:** olaborde
+**Student:** Osse Laborde
 **GitHub Username:** olaborde
 **Issue:** https://github.com/MetOffice/CSET/issues/925
 **Pull Request:** https://github.com/MetOffice/CSET/pull/2548
