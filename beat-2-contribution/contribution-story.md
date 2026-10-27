@@ -26,7 +26,7 @@ I wrote `ship-manifest.md` for CSET. Must-pass checks: `ruff check`, `ruff forma
 
 **Unit 8: PR-monitor and playbook**
 
-I wrote my playbook (`~/.claude/pr-monitor/playbook.md`) from CSET's real rhythm. Its last 20 merged PRs closed in 0 to 8 days, with one 27-day outlier, so my nudge threshold is 14 days, with one nudge and @-mentions only for people already on the thread. Running `monitor.py` was blocked the same way as unit 7's installer, so I read the same state by hand with `gh pr view 2548` on 2026-10-27. It showed OPEN, REVIEW_REQUIRED, MERGEABLE, merge state BLOCKED, 0 comments, and 0 checks (CI hasn't started, which looks like the first-time-contributor approval gate). By my playbook that means wait. There's no draft and nothing to post.
+I wrote my playbook (`~/.claude/pr-monitor/playbook.md`) from CSET's real rhythm. Its last 20 merged PRs closed in 0 to 8 days, with one 27-day outlier, so my nudge threshold is 14 days, with one nudge and @-mentions only for people already on the thread. My first attempt to install `monitor.py` was blocked in my Claude session, so I read the state by hand first with `gh pr view 2548` on 2026-10-27. It showed OPEN, REVIEW_REQUIRED, MERGEABLE, merge state BLOCKED, 0 comments, and 0 checks (CI hasn't started, which looks like the first-time-contributor approval gate). Then I installed the monitor myself and ran the free `--state` canary from my clone. It found PR #2548 and logged "quiet: under a day since the last activity by anyone but you", MERGEABLE/BLOCKED, which matched my hand read. By my playbook that means wait. There's no draft and nothing to post.
 
 ---
 
